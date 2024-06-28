@@ -1,5 +1,10 @@
 import style from './navbar.module.css';
 
+
+export interface AdInterface {   
+    src:string;
+}
+
 const  Navbar = () => {
 
     return (
@@ -22,8 +27,8 @@ const  Navbar = () => {
                     <li  className={style.link}>
                         <a  className={style.links} href="#">Upcoming</a>
                     </li>
-                </ul>
-
+                </ul>                
+                
             </div>
 
             </section>
