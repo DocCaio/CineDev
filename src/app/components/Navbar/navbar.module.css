@@ -1,0 +1,9 @@
+
+@import url(../../globals.css);
+
+.cine {
+    background: linear-gradient(92deg, #453C92 3.32%, #5F23A5 49.69%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
