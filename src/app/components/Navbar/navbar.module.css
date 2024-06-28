@@ -1,9 +1,55 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
 @import url(../../globals.css);
 
-.cine {
-    background: linear-gradient(92deg, #453C92 3.32%, #5F23A5 49.69%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+.bar {   
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+   
 }
+
+.cine {
+   background: linear-gradient(92deg, #453C92 3.32%, #5F23A5 49.69%);
+   background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Mochiy Pop One";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.dev {
+ color: rgba(255, 255, 255, 0.82);
+ font-family: "Mochiy Pop One";
+ font-size: 35px;
+ font-style: normal;
+ font-weight: 400;
+ line-height: normal;
+}
+
+.list {    
+  display: flex;
+  gap: 6rem; 
+  list-style: none;   
+}
+
+
+.links {    
+    color: #FFF;
+    font-family: "Heebo";  
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  cursor: pointer;
+  }
+
+
+
+
+

@@ -3,11 +3,10 @@ import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <>
-    <body>
-    <Navbar/>
-    </body>
-    
-    </>
+    <main className={styles.main}>
+      <div className={styles.description}>
+        <Navbar/>
+      </div>
+    </main>
   );
 }

@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-
 import "./globals.css";
 
+
+
 export const metadata: Metadata = {
-  title: "Cine",
-  description: "Cine tickets",
+  title: "Cine Dev",
+  description: "Cine system ,buy tickets",
 };
 
 export default function RootLayout({
@@ -14,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="body">{children}</body>     
     </html>
   );
 }
