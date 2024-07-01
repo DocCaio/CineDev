@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
-@import url(../../globals.css);
+@import '../../globals.css';
 
 .bar {   
     max-width: 900px;
@@ -39,8 +39,9 @@
 
 
 .links {    
-    color: #FFF;
-    font-family: "Heebo";  
+  position: relative;
+  color: #FFF;
+  font-family: "Heebo";  
   font-size: 21px;
   font-style: normal;
   font-weight: 400;
@@ -48,6 +49,25 @@
   text-decoration: none;
   cursor: pointer;
   }
+
+  .links::before {
+    content:  " ";
+    width: 2rem;
+    height: 0.2rem;
+    background: linear-gradient(90deg,#a993fe 0%, #7e61e7 100%) ;
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: -0.6rem;
+    opacity: 0;
+    transform: translateX(-1.5rem);
+    transition: all 0.3s ease;
+}
+
+.links:hover::before {
+    width: 100%;
+    transform: translateX(0);
+    opacity: 1;
+}
 
 
 

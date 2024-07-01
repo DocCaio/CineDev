@@ -1,3 +1,4 @@
+import Buttons from '../Buttons';
 import style from './title.module.css';
 
 
@@ -17,6 +18,7 @@ const  Title = () => {
                 family and job, suddenly becomes aware of her selves in all multiverses
                 and discovers that she is the only power that can save the universe.
             </p>
+            <Buttons/>
 
         </section>
 

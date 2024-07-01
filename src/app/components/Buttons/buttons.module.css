@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Sanchez:ital@0;1&display=swap');
+
+.link {
+  color: #FFF;
+  font-family: "Sanchez";
+  font-size: 35px; 
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.875px;
+  padding: 1rem;
+  background: linear-gradient(90deg, #302399 0%, #5F23A5 117.74%);
+}
+
