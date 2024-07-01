@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+.descripcion {
+    display: flex;
+    gap: 1rem;   
+    padding: 1rem;
+ 
+}
+.star span { 
+    margin-left: 0.5rem;     
+    color: #FFF;
+    font-family: "Secular One";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+
+.star svg {    
+    fill: #D9D9D9;
+    opacity: 0.9;
+}
