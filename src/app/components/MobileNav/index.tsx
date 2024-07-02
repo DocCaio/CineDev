@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import style from './navbar.module.css';
+import style from './mobile.module.css';
 
 
 export interface AdInterface {   
