@@ -12,12 +12,12 @@ const  Title = () => {
     return (
        
         <>
-        <section>
-            <h1 className={style.title}>Everything everywhere all at once</h1>
+        <section className={style.texts}>
+            <h1 className={style.title}>Star Wars</h1>
             <p className={style.subtitle}>
-                It is about the events that develop when Evelyn, who has an ordinary life with her 
-                family and job, suddenly becomes aware of her selves in all multiverses
-                and discovers that she is the only power that can save the universe.
+            Star Wars is an American space opera franchise created
+            by filmmaker George Lucas, which features a series 
+            of nine science fantasy films and two spin-offs.
             </p>
             <Star/>
             <Buttons/>

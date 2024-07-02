@@ -2,7 +2,6 @@ import style from './buttons.module.css';
 //import arrow from '../../assets/arrow-right-short.svg';
 //import vector from '../../assets/Vector.png';
 
-
 export interface AdInterface {   
     src:string;
 }
@@ -11,7 +10,7 @@ const  Buttons = () => {
 
     return (
        
-        <>
+        <section className={style.links}>
 
        
           <a className={style.link}>
@@ -29,7 +28,9 @@ const  Buttons = () => {
            </svg>
           </a>
 
-        </>
+         
+          </section> 
+
         
     )
 

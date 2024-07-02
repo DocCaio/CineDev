@@ -2,11 +2,12 @@
 
 .descripcion {
     display: flex;
-    gap: 1rem;   
-    padding: 1rem;
+    gap: 1rem;
+    padding-bottom: 2rem;
+
  
 }
-.star span { 
+.star span {         
     margin-left: 0.5rem;     
     color: #FFF;
     font-family: "Secular One";

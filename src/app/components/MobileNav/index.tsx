@@ -1,28 +1,21 @@
 import { useState } from 'react';
 import style from './navbar.module.css';
-import MobileNav from '../MobileNav';
 
 
 export interface AdInterface {   
-    src:string;
-   
+    src:string;    
 }
 
-const  Navbar = () => {
-
-    const [openMenu , setOpenMenu] = useState(false);
-     
-    const toggleMenu = () => {
-        setOpenMenu(!openMenu);
-    };
+const MobileNav =({isOpen, toggleMenu}) => {  
 
     return (
-       
-        <>
-          <MobileNav isOpen={openMenu} toggleMenu={toggleMenu}/>
-        <section className={style.bar}>
+   <>   
+   <div className={`mobile-menu ${isOpen ? "active": ""}`}
+         onClick={toggleMenu}
+   >
 
-            <div>
+    
+            <div className={style.mobile}>
                <span className={style.cine}>Cine</span> 
                <span className={style.dev}>Dev</span> 
             </div>
@@ -41,24 +34,9 @@ const  Navbar = () => {
                 
             </div>
 
-            <button className='menu-btn' onClick={toggleMenu}>
-            <span 
-              className={"material-symbols-outlined"}
-              style={{fontSize: "1.8rem"}}
-            >                
-                {openMenu ? "close" : "menu"}
-                
-            </span>
-            </button>  
-
-            </section>
-
-        </>
-        
+   </div>
+   </>
     )
-
 }
- 
 
-    
-export default Navbar;
+export default MobileNav;

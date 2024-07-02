@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Sanchez:ital@0;1&display=swap');
 
+.links {
+  display: flex;
+  gap: 0.5rem;
+}
+
 .link {
   color: #FFF;
   font-family: "Sanchez";
@@ -10,5 +15,10 @@
   letter-spacing: 0.875px;
   padding: 1rem;
   background: linear-gradient(90deg, #302399 0%, #5F23A5 117.74%);
+  cursor: pointer;  
+}
+
+.link:hover {
+  background: linear-gradient(90deg,#a993fe 0%, #7e61e7 100%) ;
 }
 
