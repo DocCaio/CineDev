@@ -1,12 +1,14 @@
-import { useState } from 'react';
+"use client";
+import { useState } from 'react'
 import style from './navbar.module.css';
 import MobileNav from '../MobileNav';
 
-
 export interface AdInterface {   
     src:string;
+    useState:boolean;
    
 }
+
 
 const  Navbar = () => {
 
@@ -15,13 +17,14 @@ const  Navbar = () => {
     const toggleMenu = () => {
         setOpenMenu(!openMenu);
     };
-
+    
+   
     return (
        
-        <>
+        <>        
           <MobileNav isOpen={openMenu} toggleMenu={toggleMenu}/>
         <section className={style.bar}>
-
+        <div className={style.barContent}>
             <div>
                <span className={style.cine}>Cine</span> 
                <span className={style.dev}>Dev</span> 
@@ -41,7 +44,7 @@ const  Navbar = () => {
                 
             </div>
 
-            <button className='menu-btn' onClick={toggleMenu}>
+            <button className={style.menuBtn} onClick={toggleMenu}>
             <span 
               className={"material-symbols-outlined"}
               style={{fontSize: "1.8rem"}}
@@ -49,7 +52,9 @@ const  Navbar = () => {
                 {openMenu ? "close" : "menu"}
                 
             </span>
-            </button>  
+            </button> 
+
+            </div>
 
             </section>
 
