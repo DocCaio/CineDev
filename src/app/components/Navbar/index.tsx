@@ -48,8 +48,8 @@ const  Navbar = () => {
             <span 
               className={"material-symbols-outlined"}
               style={{fontSize: "1.8rem"}}
-            >                
-                {openMenu ? "close" : "menu"}
+            >               
+                {openMenu ? "x" : "|||"}
                 
             </span>
             </button> 
