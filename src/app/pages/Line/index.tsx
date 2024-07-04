@@ -23,7 +23,7 @@ const Chairs = ({ project: { imageSrc, title } }: ChairsProps) => {
        
         <section className={styles.links}>
 
-<div className="1row ">
+   <div className="1row ">
         <div className="col-xs-12 ">
             <div className="col-md-1 ">
             <img src={getImageUrl(imageSrc)} 
