@@ -32,7 +32,7 @@ const  Navbar = () => {
             <div>
                 <ul className={style.list}>
                     <li className={style.link}>
-                        <a className={style.links} href="../../pages/Chairs">Home</a>
+                        <a className={style.links} href="#">Home</a>
                     </li>
                     <li  className={style.link}>
                         <a  className={style.links} href="#">Streaming</a>
