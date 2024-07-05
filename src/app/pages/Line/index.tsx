@@ -30,7 +30,8 @@ const Chairs = ({ project: { imageSrc, title } }: ChairsProps) => {
              alt= {`image of ${title}`}
              className={styles.image}
              
-             />            </div>
+             />            
+             </div>
             <div className="col-md-1 ">
             <img src={getImageUrl(imageSrc)} 
              alt= {`image of ${title}`}
@@ -55,8 +56,7 @@ const Chairs = ({ project: { imageSrc, title } }: ChairsProps) => {
             <div className="col-md-1 ">
             <img src={getImageUrl(imageSrc)} 
              alt= {`image of ${title}`}
-             className={styles.image}
-             
+             className={styles.image}             
              />    
             </div>
             <div className="col-md-1 ">
