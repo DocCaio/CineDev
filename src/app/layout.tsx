@@ -18,8 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <header>
-          <div className="text-xl font-bold">Codegus</div>
+        <header>          
           <nav className={style.barContent} >   
           <div>
                <span className={style.cine}>Cine</span> 
@@ -34,7 +33,7 @@ export default function RootLayout({
                         <Link href="/about"  className={style.links}>Streaming</Link>
                     </li>
                     <li  className={style.link}>
-                        <Link  className={style.links} href="#">Upcoming</Link>
+                        <Link href="/"  className={style.links}>Upcoming</Link>
                     </li>
                 </ul>
               </div>    

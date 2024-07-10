@@ -1,6 +1,6 @@
 import Link from "next/link";
 import style from '../app/page.module.css';
-import Buttons from "@/Buttons/buttons";
+import Buttons from "@/app/Buttons/buttons";
 
 export default function Home() {
   return (
@@ -12,18 +12,6 @@ export default function Home() {
             by filmmaker George Lucas, which features a series 
             of nine science fantasy films and two spin-offs.
       </p>
-
-      <div className="flex flex-col">
-        <Link href="/profiles/guscsales?lang=pt" className="hover:underline">
-          Gus
-        </Link>
-        <Link href="/profiles/helenitas?lang=en" className="hover:underline">
-          Hele
-        </Link>
-        <Link href="/profiles/tonysales?lang=es" className="hover:underline">
-          Tony
-        </Link>
-      </div>
         <Buttons/>
       
       </section>
