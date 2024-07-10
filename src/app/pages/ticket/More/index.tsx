@@ -1,14 +1,12 @@
-import styles from './ticket.module.css'; // Make sure the file path is correct
+import styles from '../ticket.module.css'; // Make sure the file path is correct
 import Link from 'next/link';
 import Image from 'next/image';
-import Poltrona from '../../assets/PoltronaLivre.png';
-import Preferencial from '../../assets/PoltronaLivrePreferencial.png';
-import More from './More';
+import Poltrona from '../../../assets/PoltronaLivre.png';
+import Preferencial from '../../../assets/PoltronaLivrePreferencial.png';
 
 export default function Ticket() {
   return (
     <>
-    <section className={styles.chars}>
       <div className={styles.ticketContainer}>
         {[...Array(10)].map((_, index) => (
           <div key={index} className={styles.imageWrapper}>            
@@ -23,10 +21,6 @@ export default function Ticket() {
           </div>
         ))}
       </div>
-
-      <More/>
-
-      </section>
     </>
   );
 }
