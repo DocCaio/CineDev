@@ -2,6 +2,7 @@ import type {Metadata} from "next";
 import "./globals.css";
 import Link from "next/link";
 import style from './layout.module.css';
+import Navbar from "./Navbar";
 
 
 
@@ -20,23 +21,7 @@ export default function RootLayout({
       <body>
         <header>          
           <nav className={style.barContent} >   
-          <div>
-               <span className={style.cine}>Cine</span> 
-               <span className={style.dev}>Dev</span> 
-            </div>
-            <div>       
-            <ul className={style.list}>
-                    <li className={style.link}>
-                        <Link href="/" className={style.links}>Home</Link>
-                    </li>
-                    <li  className={style.link}>
-                        <Link href="/about"  className={style.links}>Streaming</Link>
-                    </li>
-                    <li  className={style.link}>
-                        <Link href="/"  className={style.links}>Upcoming</Link>
-                    </li>
-                </ul>
-              </div>    
+           <Navbar/>   
           </nav>
         </header>
 
