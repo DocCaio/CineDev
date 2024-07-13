@@ -11,7 +11,9 @@ export default function Legend() {
       <div className={styles.legendContainer}>
 
        <div> 
-        <Image  width={100}
+        <Image
+                className={styles.img}  
+                width={100}
                 height={100}
                 alt='Poltrona' 
                 src={Poltrona}
@@ -20,7 +22,9 @@ export default function Legend() {
         </div> 
 
         <div>     
-        <Image  width={100}
+        <Image  
+               className={styles.img} 
+                width={100}
                 height={100}
                  alt='Poltrona Ocupada' 
                  src={PoltronaOcupada}
@@ -31,8 +35,10 @@ export default function Legend() {
                
 
                  <div>   
-        <Image width={100}
-                height={100}
+        <Image 
+                 className={styles.img}        
+                 width={100}
+                 height={100}
                  alt='Poltrona Escolhida' 
                  src={PoltronaEscolhida}
                  />
@@ -40,7 +46,9 @@ export default function Legend() {
                  </div>  
 
                   <div>   
-        <Image width={100}
+        <Image 
+              className={styles.img} 
+               width={100}
                height={100} 
                alt='Preferencial' 
                src={Preferencial}

@@ -1,4 +1,4 @@
-import styles from '../ticket.module.css';
+import styles from './more.module.css';
 import Image from 'next/image';
 import Poltrona from '../../../assets/PoltronaLivre.png';
 import Preferencial from '../../../assets/PoltronaLivrePreferencial.png';
