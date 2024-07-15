@@ -1,26 +1,56 @@
+import Image from 'next/image';
+import styles from './streaming.module.css';
+import old from './assets/old.png';
+import race from './assets/race.png';
+import gold from './assets/gold.png';
+import dark from './assets/dark.png';
+
 export default function About() {
   return (
     <>
-      <h1 className="text-xl font-bold mb-7">Sobre</h1>
+    <div>
+      <h1 className={styles.title}>Now Streaming</h1>
 
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-        aliquid repudiandae, et laborum rem iure aliquam inventore animi fugit,
-        incidunt veritatis voluptatibus ducimus molestiae maiores eum aspernatur
-        alias suscipit minima!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-        aliquid repudiandae, et laborum rem iure aliquam inventore animi fugit,
-        incidunt veritatis voluptatibus ducimus molestiae maiores eum aspernatur
-        alias suscipit minima!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-        aliquid repudiandae, et laborum rem iure aliquam inventore animi fugit,
-        incidunt veritatis voluptatibus ducimus molestiae maiores eum aspernatur
-        alias suscipit minima!
-      </p>
+<div  className={styles.streaming}>
+      <legend className={styles.type}>Dark</legend> 
+      <Image
+                 className={styles.img}        
+                 width={100}
+                 height={100}
+                 alt='Poltrona Escolhida' 
+                 src={dark}
+                 />
+
+<legend className={styles.type}>Dark</legend> 
+      <Image
+                 className={styles.img}        
+                 width={100}
+                 height={100}
+                 alt='Poltrona Escolhida' 
+                 src={old}
+                 />
+
+
+<legend className={styles.type}>Gold</legend> 
+      <Image
+                 className={styles.img}        
+                 width={100}
+                 height={100}
+                 alt='Poltrona Escolhida' 
+                 src={gold}
+                 />
+
+
+<legend className={styles.type}>Dark</legend> 
+      <Image
+                 className={styles.img}        
+                 width={100}
+                 height={100}
+                 alt='Poltrona Escolhida' 
+                 src={race}
+                 />
+    </div>            
+    </div>          
     </>
   );
 }

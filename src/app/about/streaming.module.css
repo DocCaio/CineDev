@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+.streaming {
+  display: flex;
+}
+.title { 
+    color: #FFF;
+    font-family: "Secular One";
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
