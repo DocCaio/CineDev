@@ -11,11 +11,14 @@
 }
 
 @media (max-width: 600px) { 
-    .ticketContainer{
-        display: none;                  
-        
     
+    .ticketContainer {
+        display: grid;
+        grid-template-columns: repeat(4, 100px);
+        grid-template-rows: repeat(3, 100px);
+        gap: 5px;
     }
+    
 
     .sits ,.chairWheels {
         width: 50px;

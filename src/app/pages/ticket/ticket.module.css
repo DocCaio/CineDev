@@ -24,6 +24,10 @@
     height: 50px;
 }
 
+.chars {
+    flex-direction: column;
+}
+
 }
 
 

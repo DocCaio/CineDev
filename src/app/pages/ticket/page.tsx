@@ -42,7 +42,7 @@ export default function Ticket() {
             {[...Array(10)].map((_, index) => (
               <div key={index} className={styles.imageWrapper} onClick={() => handleNormalClick(index)}>                      
                 <Image
-                className={styles.sits}
+                  className={styles.sits}
                   src={selectedNormalImages[index] ? PoltronaOcupada : PoltronaLivre}
                   alt={`Poltrona ${index + 1}`}
                   width={100}
