@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.container {
+    display:block;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3rem;
+
+}
+
+.span {
+    text-align: center;
+    font-family: "Secular One";
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.screen {
+    width: 100%;
+}

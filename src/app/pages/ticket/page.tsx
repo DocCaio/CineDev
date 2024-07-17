@@ -9,6 +9,7 @@ import PreferencialOcupada from '../../assets/PoltronaEscolhidaPreferencial.png'
 import More from './More';
 import Vips from './Vips';
 import Legend from './Legend';
+import Screen from './Screen';
 
 export default function Ticket() {
   const [selectedNormalImages, setSelectedNormalImages] = useState<boolean[]>(Array(10).fill(false));
@@ -64,6 +65,7 @@ export default function Ticket() {
           </div>
           <More/>
         </div>
+        <Screen/>
       </section>
     </>
   );
