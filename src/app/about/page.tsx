@@ -16,7 +16,7 @@ export default function About(props: AboutProps) {
   const { posters } = props;
 
   if (!posters) {
-    return <div>No posters available</div>;
+    return 
   }
 
   const { title, imageSrc } = posters;
