@@ -62,7 +62,7 @@ export default function Ticket() {
               </div>
             ))}
           </div>
-          <More />
+          <More/>
         </div>
       </section>
     </>
