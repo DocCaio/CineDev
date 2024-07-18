@@ -1,6 +1,6 @@
 
 import styles from "./streaming.module.css";
-import posters from '../common/utils/posters.json';
+import posters from '../common/utils/posters';
 import Page from './page';
 
 

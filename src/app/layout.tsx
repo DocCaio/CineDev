@@ -25,7 +25,7 @@ export default function RootLayout({
           </nav>
         </header>
 
-        <main className="container max-w-[800px]">{children}</main>
+        <main className="container">{children}</main>
       </body>
     </html>
   );
