@@ -10,6 +10,10 @@
     justify-content: space-around;
 }
 
+.next {
+    color: #fff;
+}
+
 
 @media (max-width: 600px) { 
    .ticketContainer {

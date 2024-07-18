@@ -10,6 +10,7 @@ import More from './More';
 import Vips from './Vips';
 import Legend from './Legend';
 import Screen from './Screen';
+import Link from 'next/link';
 
 export default function Ticket() {
   const [selectedNormalImages, setSelectedNormalImages] = useState<boolean[]>(Array(10).fill(false));
@@ -66,6 +67,15 @@ export default function Ticket() {
           <More/>
         </div>
         <Screen/>
+
+        <div>
+          <Link 
+          href='../buy'
+          className={styles.next}
+          >
+          Next
+          </Link>
+        </div>
       </section>
     </>
   );
