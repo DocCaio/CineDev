@@ -6,7 +6,9 @@ export interface PaginaProps {
 export default function Pagina(props: PaginaProps) {
 
     return (
-     <div></div>
+     <div>
+        
+     </div>
     )
 
 }
