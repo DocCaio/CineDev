@@ -1,4 +1,8 @@
-[
+import Page from '../../app/about/page'
+
+const produtos: Page[] = [
+
+
   {
       "title": "Dark",
       "imageSrc": "dark.png"
@@ -16,3 +20,5 @@
       "imageSrc": "race.png"
   }
 ]
+
+export default produtos;

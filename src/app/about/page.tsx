@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import styles from './streaming.module.css';
-import { getImageUrl } from "../common/utils/path";
+import { getImageUrl } from "../../common/utils/path";
 
 
 type Posters = {
