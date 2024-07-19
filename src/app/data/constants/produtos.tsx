@@ -4,38 +4,37 @@ const produtos: Produto[] = [
     {
         id: 1,
         nome: 'Full Pice',
-        descricao: 'Smartphone com tela de 6.5 polegadas, 128GB de armazenamento e câmera tripla.',
+        descricao: 'Regular Ticket',
         preco: 20,
-        imagem: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fHNtYXJ0cGhvbmV8ZW58MHx8fHwxNjA2NTQ2NjUx&ixlib=rb-1.2.1&q=80&w=400',
+        imagem: '/src/app/assets/Ticket.jpg',
     },
     {
         id: 2,
         nome: 'Student',
-        descricao: 'Notebook com processador Intel i7, 16GB de RAM e 512GB SSD.',
+        descricao: 'Student only',
         preco: 10,
-        imagem: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGxhcHRvcHxlbnwwfHx8fDE2MDY1NDY2NTE&ixlib=rb-1.2.1&q=80&w=400',
+        imagem: '/src/app/assets/Ticket.jpg',
     },
     {
         id: 3,
         nome: 'Senior',
-        descricao: 'Fone de ouvido Bluetooth com cancelamento de ruído e bateria de longa duração.',
+        descricao: 'People with 60s or more',
         preco: 10,
-        imagem: 'https://images.unsplash.com/photo-1618414074972-723c8314d3db?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        imagem: '/src/app/assets/Ticket.jpg',
     },
     {
         id: 4,
         nome: 'Vip',
-        descricao:
-            'Smartwatch com monitoramento de atividades físicas e notificações de smartphone.',
+        descricao:'Vit Sits',
         preco: 25,
-        imagem: 'https://images.unsplash.com/photo-1523395243481-163f8f6155ab?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        imagem: '/src/app/assets/Ticket.jpg',
     },
     {
         id: 5,
         nome: 'Special',
-        descricao: 'Câmera digital com 20MP, zoom óptico de 10x e gravação de vídeo em 4K.',
+        descricao: 'People whos use wheelsChairs',
         preco: 10,
-        imagem: 'https://images.unsplash.com/photo-1590292339438-5fc3be7fca9d?q=80&w=1960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        imagem: '/src/app/assets/Ticket.jpg',
     },
 ]
 
