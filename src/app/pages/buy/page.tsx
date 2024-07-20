@@ -1,18 +1,19 @@
-import useCarrinho from '../../data/hooks/useCarrinho';
-import Produto from '../../data/model/Tickets';
-import Image from 'next/image'
+import useCarrinho from '../../../data/hooks/useCarrinho';
+import Produto from '../../../data/model/Tickets';
+import Image from 'next/image';
 
 export interface CartaoProdutoProps {
-    produto: Produto
+    produto: Produto;
 }
 
 export default function CartaoProduto(props: CartaoProdutoProps) {
-    const { adicionar } = useCarrinho()
-    const { nome, descricao, preco, imagem } = props.produto
+    const { adicionar } = useCarrinho();
+    const { nome, descricao, preco, imagem } = props.produto;
+
     return (
         <div className="flex flex-col w-72 bg-zinc-900">
             <div className="relative w-72 h-52">
-                <Image src={imagem} alt={nome} fill className="object-cover" />
+                <Image src={imagem} alt={nome} width={288} height={208} className="object-cover" />
             </div>
             <div className="flex-1 flex flex-col gap-4 p-5">
                 <h2 className="text-xl font-bold">{nome}</h2>
@@ -28,5 +29,5 @@ export default function CartaoProduto(props: CartaoProdutoProps) {
                 </div>
             </div>
         </div>
-    )
+    );
 }
