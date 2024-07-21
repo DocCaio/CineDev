@@ -7,7 +7,7 @@
   margin-left: 2rem;
 }
 
-.title { 
+.title {
   color: #FFF;
   font-family: "Secular One";
   font-size: 55px;
@@ -17,22 +17,20 @@
 }
 
 .subtitle {
-color: #FFF;
-font-family: "PT Sans";
-font-size: 18px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 0.45px;
-width: 475px;
-height: 124px;
-flex-shrink: 0;
+  color: #FFF;
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.45px;
+  width: 475px;
+  height: 124px;
+  flex-shrink: 0;
 }
 
 @media (max-width: 600px) {
   .subtitle {
     max-width: 280px;
   }
-  }
-
-
+}

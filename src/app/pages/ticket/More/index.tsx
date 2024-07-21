@@ -29,29 +29,29 @@ export default function Ticket() {
   return (
     <>
       <div className={styles.ticketContainer}>
-            {[...Array(10)].map((_, index) => (
-              <div key={index} className={styles.imageWrapper} onClick={() => handleNormalClick(index)}>                      
-                <Image
-                  className={styles.sits}
-                  src={selectedNormalImages[index] ? PoltronaOcupada : PoltronaLivre}
-                  alt={`Poltrona ${index + 1}`}
-                  width={100}
-                  height={100}
-                />
-              </div>
-            ))}
-            {[...Array(2)].map((_, index) => (
-              <div key={index} className={styles.imageWrapper} onClick={() => handlePreferentialClick(index)}>              
-                <Image
-                  className={styles.chairWheels}
-                  src={selectedPreferentialImages[index] ? PreferencialOcupada : PreferencialLivre}
-                  alt={`PoltronaPreferencial ${index + 1}`}
-                  width={100}
-                  height={100}
-                />
-              </div>
-            ))}
+        {[...Array(10)].map((_, index) => (
+          <div key={index} className={styles.imageWrapper} onClick={() => handleNormalClick(index)}>
+            <Image
+              className={styles.sits}
+              src={selectedNormalImages[index] ? PoltronaOcupada : PoltronaLivre}
+              alt={`Poltrona ${index + 1}`}
+              width={100}
+              height={100}
+            />
           </div>
+        ))}
+        {[...Array(2)].map((_, index) => (
+          <div key={index} className={styles.imageWrapper} onClick={() => handlePreferentialClick(index)}>
+            <Image
+              className={styles.chairWheels}
+              src={selectedPreferentialImages[index] ? PreferencialOcupada : PreferencialLivre}
+              alt={`PoltronaPreferencial ${index + 1}`}
+              width={100}
+              height={100}
+            />
+          </div>
+        ))}
+      </div>
     </>
   );
 }

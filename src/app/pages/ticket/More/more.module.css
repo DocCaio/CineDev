@@ -10,17 +10,18 @@
     justify-content: space-around;
 }
 
-@media (max-width: 600px) { 
-    
+@media (max-width: 600px) {
+
     .ticketContainer {
         display: grid;
         grid-template-columns: repeat(4, 100px);
         grid-template-rows: repeat(3, 100px);
         gap: 5px;
     }
-    
 
-    .sits ,.chairWheels {
+
+    .sits,
+    .chairWheels {
         width: 50px;
         height: 50px;
     }

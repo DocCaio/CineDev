@@ -1,6 +1,6 @@
 "use client";
 import { useState } from 'react';
-import styles from './ticket.module.css'; 
+import styles from './ticket.module.css';
 import Image from 'next/image';
 import PoltronaLivre from '../../assets/PoltronaLivre.png';
 import PoltronaOcupada from '../../assets/PoltronaEscolhida.png';
@@ -33,16 +33,16 @@ export default function Ticket() {
   };
 
   return (
-    <>           
+    <>
       <section>
         <div>
-         <Legend/>
+          <Legend />
         </div>
-        <Vips/>
+        <Vips />
         <div className={styles.chars}>
           <div className={styles.ticketContainer}>
             {[...Array(10)].map((_, index) => (
-              <div key={index} className={styles.imageWrapper} onClick={() => handleNormalClick(index)}>                      
+              <div key={index} className={styles.imageWrapper} onClick={() => handleNormalClick(index)}>
                 <Image
                   className={styles.sits}
                   src={selectedNormalImages[index] ? PoltronaOcupada : PoltronaLivre}
@@ -53,7 +53,7 @@ export default function Ticket() {
               </div>
             ))}
             {[...Array(2)].map((_, index) => (
-              <div key={index} className={styles.imageWrapper} onClick={() => handlePreferentialClick(index)}>              
+              <div key={index} className={styles.imageWrapper} onClick={() => handlePreferentialClick(index)}>
                 <Image
                   className={styles.chairWheels}
                   src={selectedPreferentialImages[index] ? PreferencialOcupada : PreferencialLivre}
@@ -64,16 +64,16 @@ export default function Ticket() {
               </div>
             ))}
           </div>
-          <More/>
+          <More />
         </div>
-        <Screen/>
+        <Screen />
 
         <div>
-          <Link 
-          href="../buy"
-          className={styles.next}
+          <Link
+            href="../buy"
+            className={styles.next}
           >
-          Next
+            Next
           </Link>
         </div>
       </section>

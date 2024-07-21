@@ -2,9 +2,9 @@
 
 .legendContainer {
     display: flex;
-    justify-content: center;  
-    margin-bottom: 1rem;   
-    
+    justify-content: center;
+    margin-bottom: 1rem;
+
 
 }
 
@@ -13,25 +13,25 @@
     color: aliceblue;
     font-family: "Heebo";
     font-size: 14px;
-    font-size: 400;  
+    font-size: 400;
 }
 
-@media (max-width: 600px) { 
+@media (max-width: 600px) {
 
-    .legendContainer { 
-        text-align: center;      
-        justify-content: space-around;        
-    
+    .legendContainer {
+        text-align: center;
+        justify-content: space-around;
+
     }
 
     .img {
         width: 50px;
-        height: 50px;     
-        
-    
+        height: 50px;
+
+
     }
 
-    .type {        
+    .type {
         text-align: center;
         color: aliceblue;
     }

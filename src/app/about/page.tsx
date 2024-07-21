@@ -16,7 +16,7 @@ export default function About(props: AboutProps) {
   const { posters } = props;
 
   if (!posters) {
-    return 
+    return
   }
 
   const { title, imageSrc } = posters;
