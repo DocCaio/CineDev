@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Sanchez:ital@0;1&display=swap');
+
 .ticketContainer {
     display: grid;
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: repeat(3, 100px);
-    gap: 10px;
+    gap: 10px;   
 }
 
 .chars {
@@ -10,9 +12,29 @@
     justify-content: space-around;
 }
 
-.next {
-    color: #fff;
+.link {    
+    text-align: center;
+    margin-top: 1rem;
 }
+
+.next {   
+    color: #FFF;
+    font-family: "Sanchez";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.875px;
+    padding: 1rem;
+    background: linear-gradient(90deg, #302399 0%, #5F23A5 117.74%);
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.next:hover {
+    background: linear-gradient(90deg,#a993fe 0%, #7e61e7 100%) ;
+  }
 
 
 @media (max-width: 600px) {

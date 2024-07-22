@@ -68,7 +68,7 @@ export default function Ticket() {
         </div>
         <Screen />
 
-        <div>
+        <div className={styles.link}>
           <Link
             href="../buy"
             className={styles.next}
