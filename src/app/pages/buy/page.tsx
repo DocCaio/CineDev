@@ -6,6 +6,8 @@ export interface CartaoProdutoProps {
     produto: Produto;
 }
 
+
+
 export default function CartaoProduto(props: CartaoProdutoProps) {
     const { adicionar } = useCarrinho();
     const { nome, descricao, preco, imagem } = props.produto;
