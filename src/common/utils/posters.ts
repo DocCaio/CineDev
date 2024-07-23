@@ -1,4 +1,4 @@
-import Page from '../../app/about/page'
+import Page from '../../app/about/poster/poster'
 
 const produtos: Page[] = [
 

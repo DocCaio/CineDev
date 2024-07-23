@@ -1,42 +1,23 @@
-import Image from 'next/image';
-import styles from './streaming.module.css';
-import { getImageUrl } from "../../common/utils/path";
+import styles from "./streaming.module.css";
+import posters from '../../data/constants/produtos';
+import  Poster  from './poster/poster';
 
 
-type Posters = {
-  title: string;
-  imageSrc: string;
-};
 
-type AboutProps = {
-  posters: Posters;
-};
+export const Posters = () => {  
+   return (
 
-export default function About(props: AboutProps) {
-  const { posters } = props;
+ <section id='posters' className={styles.container}>
+   <h2 className={styles.title}>Main Projects</h2>   
+   <div className={styles.poster}>
+     {posters.map((poster, id) => {
+      return (
+          <Poster key={id} posters={poster}/>
 
-  if (!posters) {
-    return
-  }
+      )
+     })}
+   </div>
+ </section>
 
-  const { title, imageSrc } = posters;
-
-  return (
-    <>
-      <div>
-        <h2 className={styles.title}>Now Streaming</h2>
-
-        <div className={styles.streaming}>
-          <legend className={styles.title}>{title}</legend>
-          <Image
-            className={styles.img}
-            width={200}
-            height={200}
-            alt={`image of ${title}`}
-            src={getImageUrl(imageSrc)}
-          />
-        </div>
-      </div>
-    </>
-  );
+    )
 }

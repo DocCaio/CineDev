@@ -1,4 +1,3 @@
-import { text } from 'stream/consumers';
 import style from './buttons.module.css';
 import Link from 'next/link';
 
