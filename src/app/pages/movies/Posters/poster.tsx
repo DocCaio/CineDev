@@ -17,6 +17,8 @@ export const Posters: React.FC<{ project: Project }> = ({ project }) => {
                 src={getImageUrl(project.imageSrc)}
                 alt={`image of ${project.title}`}
                 className={styles.image}
+                width={100}
+                height={100}
             />
             <h3 className={styles.title}>{project.title}</h3>
             <p className={styles.description}>{project.description}</p>
