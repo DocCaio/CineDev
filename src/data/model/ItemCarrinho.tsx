@@ -1,4 +1,4 @@
-import Produto from './Tickets';
+import Produto from './Produto';
 
 export default interface ItemCarrinho {
     produto: Produto

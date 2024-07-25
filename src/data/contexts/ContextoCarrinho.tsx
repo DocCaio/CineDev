@@ -1,7 +1,7 @@
-import { createContext, useEffect, useState } from 'react'
-import ItemCarrinho from '../model/itemKart'
-import Produto from '../model/Tickets'
-import useLocalStorage from '../hooks/useLocalStorage'
+import { createContext, useEffect, useState } from 'react';
+import ItemCarrinho from '../model/ItemCarrinho';
+import Produto from '../model/Produto';
+import useLocalStorage from '../hooks/useLocalStorage';
 
 interface ContextoCarrinhoProps {
     itens: ItemCarrinho[]
@@ -68,4 +68,4 @@ export function ProvedorCarrinho(props: any) {
     )
 }
 
-export default ContextoCarrinho
+export default ContextoCarrinho;

@@ -1,0 +1,63 @@
+.containerCards {
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    background-color: rgb(24 24 27);
+}
+
+.cards {
+    position: relative;
+    width: 18rem;
+    height: 13rem;   
+}
+
+.ticket {	
+    object-fit: cover;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.25rem;
+    flex: 1;
+}
+
+.text {
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.75rem; 
+    font-weight: 700;   
+}
+
+.descricao {
+    flex: 1;
+    font-size: 0.875rem;
+    line-height: 1.25rem; 
+    color: rgb(161 161 170);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.span {
+    font-size: 1.125rem; 
+    line-height: 1.75rem; 
+    font-weight: 600;    
+    margin-top: 0.5rem;
+    color: #fff;
+}
+
+.btn {
+    border-radius: 9999px;
+    border-width: 1px;;
+    padding: 1px 5px;
+    padding: 0.25rem 1.25rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem; 
+    cursor: pointer;  
+   
+}
+    
