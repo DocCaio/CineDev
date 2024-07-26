@@ -1,0 +1,6 @@
+.pagina {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
