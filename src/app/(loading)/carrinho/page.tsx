@@ -1,9 +1,9 @@
 'use client'
-import AreaItemCarrinho from '@/components/carrinho/AreaItemCarrinho'
-import CarrinhoVazio from '@/components/carrinho/CarrinhoVazio'
-import TotalCarrinho from '@/components/carrinho/TotalCarrinho'
-import Pagina from '@/components/template/page'
-import useCarrinho from '@/data/hooks/useCarrinho'
+import AreaItemCarrinho from '@/components/carrinho/AreaItemCarrinho';
+import CarrinhoVazio from '@/components/carrinho/CarrinhoVazio';
+import TotalCarrinho from '@/components/carrinho/TotalCarrinho';
+import Pagina from '@/components/template/Pagina';
+import useCarrinho from '@/data/hooks/useCarrinho';
 
 export default function PaginaCarrinho() {
     const { itens, adicionar, remover } = useCarrinho()
