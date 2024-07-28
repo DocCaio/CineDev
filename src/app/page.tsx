@@ -1,7 +1,7 @@
-import Link from "next/link";
+//import Link from "next/link";
 import style from '../app/page.module.css';
-import Buttons from "@/app/Buttons/buttons";
-import Star from "./Star";
+import Buttons from "@/./components/Buttons/buttons";
+import Star from "../components/Star";
 
 export default function Home() {
   return (

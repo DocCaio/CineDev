@@ -2,7 +2,7 @@ import type {Metadata} from "next";
 import "./globals.css";
 import Link from "next/link";
 import style from './layout.module.css';
-import Navbar from "./Navbar";
+import Navbar from "../components/template/navBar";
 
 
 
