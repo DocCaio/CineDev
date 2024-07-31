@@ -70,7 +70,7 @@ export default function Ticket() {
 
         <div className={styles.link}>
           <Link
-            href="../../pages/buy"
+            href="../../pages/shop"
             className={styles.next}
           >
             Next

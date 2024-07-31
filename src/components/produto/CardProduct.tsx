@@ -1,7 +1,7 @@
 import useCarrinho from '@/data/hooks/useCarrinho';
 import Produto from '@/data/model/Produto';
 import Image from 'next/image';
-import styles from './CartaoProduto.module.css';
+import styles from './CardProduto.module.css';
 
 export interface CartaoProdutoProps {
     produto: Produto
