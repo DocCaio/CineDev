@@ -1,17 +1,22 @@
-'use client'
-import CartaoProduto from '@/components/produto/CardProduct';
-import Pagina from '@/components/template/Pagina';
-import produtos from '@/data/constants/produtos';
-import styles from './page.module.css';
+//import Link from "next/link";
+import style from './page.module.css';
+import Buttons from "@/./components/Buttons/buttons";
+import Star from "../../components/Star";
 
 export default function Home() {
-    return (
-        <Pagina>
-            <div className={styles.pagina}>
-                {produtos.map((produto) => (
-                    <CartaoProduto key={produto.id} produto={produto} />
-                ))}
-            </div>
-        </Pagina>
-    )
+  return (
+    <>
+      <section className={style.texts}>
+        <h1 className={style.title}>Star Wars</h1>
+        <p className={style.subtitle}>
+          Star Wars is an American space opera franchise created
+          by filmmaker George Lucas, which features a series
+          of nine science fantasy films and two spin-offs.
+        </p>
+        <Star />
+        <Buttons />
+
+      </section>
+    </>
+  );
 }
