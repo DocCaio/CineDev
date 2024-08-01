@@ -1,6 +1,6 @@
-import ItemCarrinho from '@/data/model/ItemCarrinho'
-import { IconMinus, IconPlus, IconX } from '@tabler/icons-react'
-import Image from 'next/image'
+import ItemCarrinho from '@/data/model/ItemCarrinho';
+import { IconMinus, IconPlus, IconX } from '@tabler/icons-react';
+import Image from 'next/image';
 
 export interface AreaItemCarrinhoProps {
     item: ItemCarrinho

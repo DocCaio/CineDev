@@ -1,0 +1,36 @@
+.div {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;    
+    
+}
+
+.container {
+    display: flex;
+    position: relative;
+    color: #fff; 
+    margin-left: 30px;  
+}
+
+.kart {   
+    display: flex;
+    justify-content: center;
+    top: -2.5px;
+    right: -2.5px;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: rgb(239 68 68);
+    border-radius: 50%;
+    align-items: center;
+    font-size: 0.75rem;
+    line-height: 1rem;  
+
+}
+
+@media (max-width: 769px) { 
+
+    .container {
+        margin-bottom: 30px;  
+    }
+
+}

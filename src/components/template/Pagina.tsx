@@ -1,4 +1,4 @@
-
+import Carrinho from './Carrinho'
 import './styles/page.module.css';
 import styles from './styles/page.module.css';
 
@@ -11,9 +11,9 @@ export interface PaginaProps {
 
 export default function Pagina(props: PaginaProps) {
     return (
-        <div className="flex flex-col min-h-screen">
+        <div className={styles.div}>
            
-            
+           <Carrinho/>
             <main
                 className={`
                     main
@@ -21,7 +21,7 @@ export default function Pagina(props: PaginaProps) {
                     ${props.className ?? ''} py-10
                 `}
             >
-
+            
                 {props.children}
             </main>
         </div>
