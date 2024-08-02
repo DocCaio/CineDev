@@ -6,7 +6,7 @@ import styles from './styles/carrinho.module.css';
 export default function Carrinho() {
     const { qtdeDeItens } = useCarrinho()
     return (
-        <Link href="/carrinho">
+        <Link href="/pages/shop/carrinho">
             <div className={styles.container}>
                 <IconShoppingCart size={32} stroke={1} />
                 <div
