@@ -7,7 +7,7 @@
 
 .container {
     display: flex;
-    position: relative;
+    position:absolute;
     color: #fff; 
     margin-left: 30px;  
 }
@@ -15,8 +15,9 @@
 .kart {   
     display: flex;
     justify-content: center;
-    top: -2.5px;
-    right: -2.5px;
+    position:absolute;
+    top: -8.5px;
+    right: -8.5px;
     width: 1.5rem;
     height: 1.5rem;
     background-color: rgb(239 68 68);
