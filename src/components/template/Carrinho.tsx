@@ -10,7 +10,7 @@ export default function Carrinho() {
             <div className={styles.container}>
                 <IconShoppingCart size={32} stroke={1} />
                 <div
-                    className={styles.kart}                      
+                    className={styles.kart}               
                     
                 >
                     {qtdeDeItens}
