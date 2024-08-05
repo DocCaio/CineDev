@@ -1,15 +1,16 @@
 import { IconShoppingCartOff } from '@tabler/icons-react';
 import Link from 'next/link';
+import styles from './styles/emptyKart.module.css';
 
 export default function CarrinhoVazio() {
     return (
-        <div className="flex flex-col items-center gap-4 text-zinc-500">
+        <div className={styles.card}>
             <IconShoppingCartOff size={150} stroke={0.5} />
             <div>
-                <h2 className="text-3xl ">Seu carrinho está vazio</h2>
+                <h2 className={styles.title}>Seu carrinho está vazio</h2>
                 <p>Adicione produtos clicando no botão abaixo</p>
             </div>
-            <Link href="/" className="bg-green-500 text-white rounded-sm px-4 py-2">
+            <Link href="/pages/shop" className={styles.link}>
                 Ver produtos
             </Link>
         </div>

@@ -1,0 +1,24 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: rgb(113 113 122);
+}
+
+.totle {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+
+.link {
+    background-color: rgb(34 197 94);
+    color: rgb(255 255 255);
+    border-radius: 0.125rem;
+    padding: 0.5rem  1rem;
+    text-decoration: none; 
+}
+
+
+
+
