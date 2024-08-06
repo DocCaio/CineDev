@@ -14,7 +14,7 @@ export default function Pagina(props: PaginaProps) {
         <div className={styles.div}>
            
            <Carrinho/>
-            <main
+            <main id={styles.main}
                 className={`
                     main
                     flex-1 w-[1200px] mx-auto
