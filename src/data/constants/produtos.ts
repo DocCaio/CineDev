@@ -6,7 +6,7 @@ const produtos: Produto[] = [
         nome: 'Full Pice',
         descricao: 'Regular Ticket',
         preco: 20,
-        imagem: '/src/app/assets/Ticket.jpg',
+        imagem: '/app/assets/Ticket.jpg',
     },
     {
         id: 2,
