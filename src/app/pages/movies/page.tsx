@@ -1,18 +1,18 @@
 // Projects.tsx (or Projects.jsx)
 import React from 'react';
 import styles from './streaming.module.css';
-import projects from '../../../data/utils/posters.json';
-import { Posters } from './Posters/poster';
+//import projects from '../../../data/utils/posters.json';
+//import { Posters } from './Posters/poster';
 
 const Projects = () => {
   return (
     <section id='projects' className={styles.container}>
       <h2 className={styles.title}>Main Projects</h2>
-      <div className={styles.projects}>
+      {/*<div className={styles.projects}>
         {projects.map((project, id) => (
           <Posters key={id} project={project} />
         ))}
-      </div>
+      </div>*/}
     </section>
   );
 };

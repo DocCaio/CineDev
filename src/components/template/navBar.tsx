@@ -28,7 +28,7 @@ export default function Cabecalho() {
                         <Link href="/" className={styles.links}>Home</Link>
                     </li>
                     <li  className={styles.link}>
-                        <Link href="/about"  className={styles.links}>Streaming</Link>
+                        <Link href="/pages/movies"  className={styles.links}>Streaming</Link>
                     </li>
                     <li  className={styles.link}>
                         <Link href="/"  className={styles.links}>Upcoming</Link>
