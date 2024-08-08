@@ -1,0 +1,27 @@
+
+[
+  {
+    "id": 1,
+    "title": "Card 1",
+    "description": "Descrição do Card 1",
+    "imageUrl": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 2,
+    "title": "Card 2",
+    "description": "Descrição do Card 2",
+    "imageUrl": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 3,
+    "title": "Card 3",
+    "description": "Descrição do Card 1",
+    "imageUrl": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 4,
+    "title": "Card 4",
+    "description": "Descrição do Card 1",
+    "imageUrl": "https://via.placeholder.com/150"
+  }
+]

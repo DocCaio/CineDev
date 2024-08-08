@@ -11,3 +11,36 @@
     font-weight: 400;
     line-height: normal;
   }
+
+
+  /* App.css */
+.app {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 200px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  margin: 8px;
+  color: #FFF;
+}
+
+.card p {
+  font-size: 1rem;
+  margin: 8px;
+  color: #FFF;
+}

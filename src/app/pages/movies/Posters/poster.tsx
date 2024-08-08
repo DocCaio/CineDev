@@ -1,27 +1,21 @@
-import { getImageUrl } from "../../../../data/utils/path";
+// Card.tsx
+import React from 'react';
+import { Card as CardType } from '../../../../data/model/Poster';
 import styles from '../streaming.module.css';
-import Image from "next/image";
+import { getImageUrl } from "../../../../data/utils/path";
 
-interface Project {
-    title: string;
-    imageSrc: string;
-    description?: string;
+interface CardProps {
+  card: CardType;
 }
 
-
-
-export const Posters: React.FC<{ project: Project }> = ({ project }) => {
-    return (
-        <div className={styles.container}>
-            <Image 
-                src={getImageUrl(project.imageSrc)}
-                alt={`image of ${project.title}`}
-                className={styles.image}
-                width={100}
-                height={100}
-            />
-            <h3 className={styles.title}>{project.title}</h3>
-            <p className={styles.description}>{project.description}</p>
-        </div>
-    );
+const Card: React.FC<CardProps> = ({ card }) => {
+  return (
+    <div className={styles.card}>
+      <img src={card.imageUrl} alt={card.title} />
+      <h2>{card.title}</h2>
+      <p>{card.description}</p>
+    </div>
+  );
 };
+
+export default Card;

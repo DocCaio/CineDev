@@ -13,7 +13,7 @@ export default function CartaoProduto(props: CartaoProdutoProps) {
     return (
         <div className={styles.containerCards}>
             <div className={styles.cards}>
-                {/* Using optional chaining for safe Image component */}
+                
                 <Image src={imagem} alt={nome} fill className={styles.ticket} />
             </div>
             <div className={styles.description}>
