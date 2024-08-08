@@ -61,7 +61,7 @@ const modal_style = {
 const Modal: React.FC<ModalProps> = ({ isOpen, children }) => {
   if (isOpen) {
     return  (
-        <div style={Bg_Style}>
+        <dialog style={Bg_Style}>
        <div style={modal_style}>
         
        <div>{children}</div>
@@ -70,7 +70,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, children }) => {
       </Link>
                     
         </div>
-       </div>       
+       </dialog >       
        
 
     )

@@ -28,6 +28,7 @@ export default function Ticket() {
     });
   };
 
+
   return (
     <>           
       <section>      

@@ -32,16 +32,16 @@ export default function Ticket() {
     });
   };
 
-  // Verifique se pelo menos uma imagem está selecionada
+  // Verifica se pelo menos uma imagem está selecionada
   const isButtonEnabled = selectedNormalImages.some(Boolean) || selectedPreferentialImages.some(Boolean);
 
   return (
     <>
       <section>
         <div>
-          <Legend />
+          <Legend/>
         </div>
-        <Vips />
+        <Vips/>
         <div className={styles.chars}>
           <div className={styles.ticketContainer}>
             {[...Array(10)].map((_, index) => (
