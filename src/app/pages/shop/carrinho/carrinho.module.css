@@ -1,0 +1,12 @@
+
+.page {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}

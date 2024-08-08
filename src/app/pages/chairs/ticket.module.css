@@ -7,6 +7,11 @@
     gap: 10px;   
 }
 
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
 .chars {
     display: flex;
     justify-content: space-around;

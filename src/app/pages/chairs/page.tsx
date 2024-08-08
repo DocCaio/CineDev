@@ -32,13 +32,16 @@ export default function Ticket() {
     });
   };
 
+  // Verifique se pelo menos uma imagem está selecionada
+  const isButtonEnabled = selectedNormalImages.some(Boolean) || selectedPreferentialImages.some(Boolean);
+
   return (
     <>
       <section>
         <div>
-          <Legend/>
+          <Legend />
         </div>
-        <Vips/>
+        <Vips />
         <div className={styles.chars}>
           <div className={styles.ticketContainer}>
             {[...Array(10)].map((_, index) => (
@@ -49,7 +52,6 @@ export default function Ticket() {
                   alt={`Poltrona ${index + 1}`}
                   width={100}
                   height={100}
-                  
                 />
               </div>
             ))}
@@ -65,14 +67,14 @@ export default function Ticket() {
               </div>
             ))}
           </div>
-          <More />
+          <More/>
         </div>
-        <Screen />
+        <Screen/>
 
         <div className={styles.link}>
           <Link
             href="../../pages/shop"
-            className={styles.next}
+            className={`${styles.next} ${isButtonEnabled ? '' : styles.disabled}`}
           >
             Next
           </Link>
