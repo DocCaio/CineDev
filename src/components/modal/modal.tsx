@@ -1,3 +1,5 @@
+import Link from "next/link";
+import styles from '../produto/CardProduto.module.css';
 
 
 
@@ -47,7 +49,8 @@ const modal_style = {
     marginRight: '0.5rem',
     display: 'inline-flex',
     alignItems: 'center',
-    border:  'none'  
+    TextDecoration:'none',
+    border: 'none'  
   
    }
 
@@ -55,14 +58,17 @@ const modal_style = {
  
    
 
-const Modal: React.FC<ModalProps> = ({ isOpen, setModalOpen, children }) => {
+const Modal: React.FC<ModalProps> = ({ isOpen, children }) => {
   if (isOpen) {
     return  (
         <div style={Bg_Style}>
        <div style={modal_style}>
         
        <div>{children}</div>
-          <button style={close_bnt}  onClick={setModalOpen}>Fechar</button>          
+       <Link className={styles.link} href='/'
+            style={close_bnt}>Back
+      </Link>
+                    
         </div>
        </div>       
        

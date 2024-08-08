@@ -61,4 +61,10 @@
     cursor: pointer;  
    
 }
+
+.link {
+    font-size: 1.125rem; 
+    text-decoration: none;
+    margin-top: 1rem;
+}
     
