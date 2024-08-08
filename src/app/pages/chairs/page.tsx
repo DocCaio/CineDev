@@ -36,9 +36,9 @@ export default function Ticket() {
     <>
       <section>
         <div>
-          <Legend />
+          <Legend/>
         </div>
-        <Vips />
+        <Vips/>
         <div className={styles.chars}>
           <div className={styles.ticketContainer}>
             {[...Array(10)].map((_, index) => (
@@ -49,6 +49,7 @@ export default function Ticket() {
                   alt={`Poltrona ${index + 1}`}
                   width={100}
                   height={100}
+                  
                 />
               </div>
             ))}
