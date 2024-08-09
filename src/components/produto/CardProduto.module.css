@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Sanchez:ital@0;1&display=swap');
+
 .containerCards {
     display: flex;
     flex-direction: column;
@@ -63,6 +65,7 @@
 }
 
 .link {
+    font-family: "Sanchez";
     font-size: 1.125rem; 
     text-decoration: none;
     margin-top: 1rem;

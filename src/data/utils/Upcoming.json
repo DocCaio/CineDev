@@ -1,0 +1,28 @@
+
+[
+    {
+      "id": 1,
+      "title": "Wild Life",
+      "description": "Animation , Drama",
+      "imageUrl": "https://images.unsplash.com/photo-1580130732478-4e339fb6836f?q=80&w=1949&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 2,
+      "title": "Comedy , Drama",
+      "description": "Animation",
+      "imageUrl": "https://images.unsplash.com/photo-1580130544326-80fc93876841?q=80&w=1980&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 3,
+      "title": "The Gas",
+      "description": "Terror",
+      "imageUrl": "https://images.unsplash.com/photo-1580130732455-6663b4ce9f6e?q=80&w=1956&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 4,
+      "title": "Miss",
+      "description": "True story",
+      "imageUrl": "https://images.unsplash.com/photo-1497514440240-3b870f7341f0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTYxfHxwb3N0ZXJzJTIwZmlsbWVzfGVufDB8fDB8fHww"
+    }
+  ]
+  

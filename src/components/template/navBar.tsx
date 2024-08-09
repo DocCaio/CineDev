@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import Link from 'next/link';
 import MobileNav from './MobileNav';
 import { useState } from 'react';
@@ -31,7 +31,7 @@ export default function Cabecalho() {
                         <Link href="/pages/movies"  className={styles.links}>Streaming</Link>
                     </li>
                     <li  className={styles.link}>
-                        <Link href="/"  className={styles.links}>Upcoming</Link>
+                        <Link href="/pages/Upcoming"  className={styles.links}>Upcoming</Link>
                     </li>
                 </ul>
               </div> 
