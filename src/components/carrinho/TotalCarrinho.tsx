@@ -19,9 +19,9 @@ export default function TotalCarrinho(props: TotalCarrinhoProps) {
                 <span className={styles.price}>R$ {total.toFixed(2)}</span>
             </div>
             <button onClick={() => setOpenModal(true)}
-                className={styles.btn}>Finalizar</button>
+                className={styles.btn}>Finish</button>
             <Modal isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)} >
-                Compra concluída
+               Purchase completed
 
 
             </Modal>
