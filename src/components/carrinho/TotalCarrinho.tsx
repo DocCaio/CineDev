@@ -22,7 +22,7 @@ export default function TotalCarrinho(props: TotalCarrinhoProps) {
                 className={styles.btn}>Finish</button>
             <Modal isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)} >
                Purchase completed
-
+               
 
             </Modal>
         </div>
