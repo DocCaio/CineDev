@@ -8,7 +8,7 @@ import PreferencialLivre from '../../../assets/PoltronaLivrePreferencial.png';
 import PreferencialOcupada from '../../../assets/PoltronaEscolhidaPreferencial.png';
 
 
-export default function Ticket() {
+export default function Vips() {
   const [selectedNormalImages, setSelectedNormalImages] = useState<boolean[]>(Array(10).fill(false));
   const [selectedPreferentialImages, setSelectedPreferentialImages] = useState<boolean[]>(Array(2).fill(false));
 

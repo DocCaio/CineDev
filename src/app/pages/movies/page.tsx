@@ -10,7 +10,7 @@ const App: React.FC = () => {
   const [cards, setCards] = useState<CardType[]>([]);
 
   useEffect(() => {
-    // Carregando dados dos cards
+    // Carrega dados dos cards
     setCards(cardData);
   }, []);
 
