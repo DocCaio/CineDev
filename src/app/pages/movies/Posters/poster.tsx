@@ -10,7 +10,7 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({ card }) => {
   return (
     <div className={styles.card}>
-      <Link href='/pages/chairs'>
+      <Link href='/pages/shop'>
       <img src={card.imageUrl} alt={card.title} />
       <h2>{card.title}</h2>
       <p>{card.description}</p>

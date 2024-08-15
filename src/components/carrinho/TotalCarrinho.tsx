@@ -1,7 +1,7 @@
 import ItemCarrinho from '@/data/model/ItemCarrinho';
 import styles from './styles/total.module.css';
-import Modal from '../modal/modal';
-import { useState } from 'react';
+import Link from 'next/link';
+
 
 
 export interface TotalCarrinhoProps {
@@ -9,7 +9,7 @@ export interface TotalCarrinhoProps {
 }
 
 export default function TotalCarrinho(props: TotalCarrinhoProps) {
-    const [openModal, setOpenModal] = useState(false);
+  
     const total = props.itens.reduce((acc, item) => acc + item.produto.preco * item.quantidade, 0)
     return (
 
@@ -18,13 +18,10 @@ export default function TotalCarrinho(props: TotalCarrinhoProps) {
                 <span className={styles.span}>Total</span>
                 <span className={styles.price}>R$ {total.toFixed(2)}</span>
             </div>
-            <button onClick={() => setOpenModal(true)}
-                className={styles.btn}>Finish</button>
-            <Modal isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)} >
-               Purchase completed
-               
 
-            </Modal>
+            <Link href='/pages/chairs'className={styles.btn}>Finish</Link>
+           
+            
         </div>
 
 
