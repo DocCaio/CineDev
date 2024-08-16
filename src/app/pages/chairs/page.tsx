@@ -121,7 +121,7 @@ export default function Ticket() {
 
         <div className={styles.link}>
           <Link
-            href="../../pages/shop"
+            href="/"
             className={`${styles.next} ${isButtonEnabled ? '' : styles.disabled}`}
           >
             Next
