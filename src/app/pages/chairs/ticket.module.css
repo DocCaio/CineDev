@@ -6,7 +6,10 @@
     grid-template-rows: repeat(3, 100px);
     gap: 10px;   
 }
-
+.vip {
+    display: flex;   
+    
+}
 .disabled {
     pointer-events: none;
     opacity: 0.5;
