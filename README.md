@@ -17,7 +17,7 @@
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=%20finished&color=GREEN&style=for-the-badge)
 
 ### Print
-  <img src="#" alt="Minha Figura">
+  <img src="https://github.com/DocCaio/Cine/blob/main/src/app/assets/print.png" alt="Minha Figura">
 
   ```mk
 npx create-next-app@latest
