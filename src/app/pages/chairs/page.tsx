@@ -9,12 +9,13 @@ import PreferencialLivre from '../../assets/PoltronaLivrePreferencial.png';
 import PreferencialOcupada from '../../assets/PoltronaEscolhidaPreferencial.png';
 import Legend from './Legend';
 import Screen from './Screen';
-import Link from 'next/link';
+import Check from '../../assets/check.png';
+import Modal from '@/components/modal/modal';
 
 export default function Ticket() {
   const totalNormalSeats = 30; // Quantidade total de assentos normais
   const totalPreferentialSeats = 6; // Quantidade total de assentos preferenciais
-  
+
   const [selectedNormalImages, setSelectedNormalImages] = useState<boolean[]>(Array(totalNormalSeats).fill(false));
   const [selectedPreferentialImages, setSelectedPreferentialImages] = useState<boolean[]>(Array(totalPreferentialSeats).fill(false));
 
@@ -37,16 +38,17 @@ export default function Ticket() {
   // Verifica se pelo menos uma imagem está selecionada
   const isButtonEnabled = selectedNormalImages.some(Boolean) || selectedPreferentialImages.some(Boolean);
 
+  const [openModal, setOpenModal] = useState(false);
   return (
     <>
       <section>
         <div>
-          <Legend/>
+          <Legend />
         </div>
         <div className={styles.chars}>
           <div className={styles.vip}>
             {[...Array(12)].map((_, index) => (
-              <div key={index} className={styles.imageWrapper} onClick={() => handleNormalClick(index)}>                      
+              <div key={index} className={styles.imageWrapper} onClick={() => handleNormalClick(index)}>
                 <Image
                   src={selectedNormalImages[index] ? PoltronaOcupada : PoltronaLivre}
                   alt={`Poltrona ${index + 1}`}
@@ -56,7 +58,7 @@ export default function Ticket() {
               </div>
             ))}
             {[...Array(2)].map((_, index) => (
-              <div key={index + totalNormalSeats} className={styles.imageWrapper} onClick={() => handlePreferentialClick(index)}>              
+              <div key={index + totalNormalSeats} className={styles.imageWrapper} onClick={() => handlePreferentialClick(index)}>
                 <Image
                   src={selectedPreferentialImages[index] ? PreferencialOcupada : PreferencialLivre}
                   alt={`PoltronaPreferencial ${index + 1}`}
@@ -65,7 +67,7 @@ export default function Ticket() {
                 />
               </div>
             ))}
-          </div>        
+          </div>
         </div>
         <div className={styles.chars}>
           <div className={styles.ticketContainer}>
@@ -117,16 +119,20 @@ export default function Ticket() {
             ))}
           </div>
         </div>
-        <Screen/>
+        <Screen />
 
         <div className={styles.link}>
-          <Link
-            href="/"
-            className={`${styles.next} ${isButtonEnabled ? '' : styles.disabled}`}
-          >
-            Next
-          </Link>
+          <button onClick={() => setOpenModal(true)}
+            className={`${styles.next} ${isButtonEnabled ? '' : styles.disabled}`}>Finish
+          </button>
         </div>
+        <Modal  isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)} >
+          
+        <Image alt='check icon' src={Check}/>
+         
+
+
+        </Modal>
       </section>
     </>
   );

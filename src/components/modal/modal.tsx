@@ -27,7 +27,7 @@ const modal_style = {
     top: '50%',
     left: '50%',
     transform:'translate(-50%, -50%)' ,
-    padding:'150px' ,
+    padding:'100px' ,
     backgroundColor:'#fff',
     borderRadius:'10px',
     color:'black'
