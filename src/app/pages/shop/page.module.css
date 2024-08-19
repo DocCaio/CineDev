@@ -3,4 +3,34 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 1.25rem;
+    /* Adicionando uma largura máxima para o container, se necessário */
+    max-width: 1200px; 
+    margin: 0 auto; /* Centraliza o container na tela */
+}
+
+/* Adapta o layout para telas menores */
+@media (max-width: 1200px) {
+    .pagina {
+        gap: 2rem; /* Reduz o espaçamento entre os itens */
+    }
+}
+
+@media (max-width: 992px) {
+    .pagina {
+        gap: 1.75rem; /* Reduz o espaçamento entre os itens ainda mais */
+    }
+}
+
+@media (max-width: 768px) {
+    .pagina {
+        gap: 1.5rem; /* Reduz ainda mais o espaçamento entre os itens */
+    }
+}
+
+@media (max-width: 576px) {
+    .pagina {
+        margin-left: 2.5rem;
+        flex-direction: column; /* Muda a direção para coluna em telas muito pequenas */
+        gap: 1.5rem; /* Mantém o espaçamento reduzido */
+    }
 }

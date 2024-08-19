@@ -53,6 +53,11 @@
         gap: 5px;
     }
 
+    .vip {
+        display: none;   
+        
+    }
+
     .sits,
     .chairWheels {
         width: 50px;

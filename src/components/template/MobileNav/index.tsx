@@ -1,4 +1,5 @@
-import  './mobile.css';
+import Link from 'next/link';
+import './mobile.css';
 
 interface MobileNavProps {
   isOpen: boolean;
@@ -15,30 +16,30 @@ const MobileNav: React.FC<MobileNavProps> = ({ isOpen, toggleMenu }) => {
       aria-label="Toggle menu"
     >
       <div className='mobileMenuContainer'>
-      <div>
-        <span className='cine'>Cine</span>
-        <span className='dev'>Dev</span>
+        <div>
+          <Link href='/' className='cine'>Cine</Link>
+          <Link href='/' className='dev'>Dev</Link>
+        </div>
+        <div>
+          <ul className='list'>
+            <li className='link'>
+              <Link className='links' href="/">
+                Home
+              </Link>
+            </li>
+            <li className='link'>
+              <Link className='links' href="/pages/movies">
+                Streaming
+              </Link>
+            </li>
+            <li className='link'>
+              <Link className='links' href="/pages/Upcoming">
+                Upcoming
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <ul className='list'>
-          <li className='link'>
-            <a className='links' href="#">
-              Home
-            </a>
-          </li>
-          <li className='link'>
-            <a className='links' href="#">
-              Streaming
-            </a>
-          </li>
-          <li className='link'>
-            <a className='links' href="#">
-              Upcoming
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
 
     </div>
   );

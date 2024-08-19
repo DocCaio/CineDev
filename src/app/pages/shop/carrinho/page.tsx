@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import AreaItemCarrinho from '@/components/carrinho/AreaItemCarrinho';
 import CarrinhoVazio from '@/components/carrinho/CarrinhoVazio';
 import TotalCarrinho from '@/components/carrinho/TotalCarrinho';
