@@ -19,8 +19,8 @@ export default function Cabecalho() {
         <section className={styles.bar}>
         <div className={styles.barContent}>            
             <div>
-               <span className={styles.cine}>Cine</span> 
-               <span className={styles.dev}>Dev</span> 
+               <Link href='/' className={styles.cine}>Cine</Link> 
+               <Link href='/' className={styles.dev}>Dev</Link> 
             </div>
             <div>       
             <ul className={styles.list}>
