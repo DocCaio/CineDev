@@ -1,5 +1,5 @@
 
-"use client"
+"use client";
 import { useState } from 'react';
 import styles from './ticket.module.css';
 import Image from 'next/image';

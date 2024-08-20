@@ -69,44 +69,25 @@
     background-color: rgb(236, 228, 228);
 }
 
-/* Adaptações para dispositivos móveis */
-@media (max-width: 769px) { 
+@media (max-width: 768px) {
     .container {
+        align-items: center;
         flex-direction: column;
-        align-items: flex-start;
         gap: 1rem;
-        padding: 1rem; /* Adiciona um pouco de padding nas laterais */
+        width: 25%;
+        margin-left: 1.2rem;
+
     }
 
-    .card {
+    .card {        
         width: 100%;
-        height: auto; /* Permite que a altura seja ajustada de acordo com o conteúdo */
+       
     }
 
-    .descriptionName {
-        font-size: 1rem;
-        line-height: 1.5rem;
+
+
+    .description {        
+        text-align: center;
     }
 
-    .descriptionProduct {
-        font-size: 0.75rem;
-        line-height: 1.125rem;
-    }
-
-    .contain {
-        font-size: 1rem;
-        line-height: 1.5rem;
-    }
-
-    .remove {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
-    .Qnt {
-        padding-left: 0.75rem;
-        padding-right: 0.75rem;
-        padding-top: 0.25rem; 
-        padding-bottom: 0.25rem;
-    }
 }

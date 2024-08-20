@@ -4,30 +4,31 @@
     display: grid;
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: repeat(3, 100px);
-    gap: 10px;   
+    gap: 10px;
 }
+
 .vip {
-    display: flex;   
-    
+    display: flex;
 }
+
 .disabled {
     pointer-events: none;
     opacity: 0.5;
-  }
+}
 
 .chars {
     display: flex;
     justify-content: space-around;
 }
 
-.link {    
+.link {
     text-align: center;
     margin-top: 1rem;
 }
 
-.next {   
+.next {
     color: #FFF;
-    font-family: "Sanchez";
+    font-family: "Sanchez", sans-serif;
     font-size: 25px;
     font-style: normal;
     font-weight: 400;
@@ -37,25 +38,23 @@
     background: linear-gradient(90deg, #302399 0%, #5F23A5 117.74%);
     cursor: pointer;
     text-decoration: none;
-
 }
 
 .next:hover {
-    background: linear-gradient(90deg,#a993fe 0%, #7e61e7 100%) ;
-  }
+    background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+}
 
-
+/* Media query for screens smaller than 600px */
 @media (max-width: 600px) {
     .ticketContainer {
-        display: grid;
-        grid-template-columns: repeat(4, 100px);
-        grid-template-rows: repeat(3, 100px);
+        grid-template-columns: repeat(4, 50px); /* Adjusted for smaller screens */
+        grid-template-rows: repeat(6, 50px);    /* Adjusted for more rows */
         gap: 5px;
+       
     }
 
     .vip {
-        display: none;   
-        
+        display: none; /* Keep it hidden for smaller screens */
     }
 
     .sits,
@@ -65,7 +64,16 @@
     }
 
     .chars {
+        align-items: center;
         flex-direction: column;
     }
 
+    .link {
+        margin-top: 0.5rem; /* Adjusted margin for smaller screens */
+    }
+
+    .next {
+        font-size: 20px; /* Reduced font size for smaller screens */
+        padding: 0.5rem; /* Reduced padding for smaller screens */
+    }
 }
