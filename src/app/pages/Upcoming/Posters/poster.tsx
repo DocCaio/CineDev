@@ -1,5 +1,5 @@
 import { Card as CardType } from '@/data/model/Poster';
-import styles from '../upcoming.module.css';
+import styles from '../up.module.css'
 import Link from 'next/link';
 
 interface CardProps {
