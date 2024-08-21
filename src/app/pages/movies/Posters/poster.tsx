@@ -1,5 +1,5 @@
 // Card.tsx
-import { Card as CardType } from '../../../../data/model/Poster';
+import { Card as CardType } from '@/data/model/Poster';
 import styles from '../streaming.module.css';
 import Link from 'next/link';
 
