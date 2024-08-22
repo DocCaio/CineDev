@@ -1,7 +1,19 @@
-body {    
+
+body {  
   padding: 0; 
   margin: 0;
-  box-sizing:border-box;   
-  background-image: url('../app/assets/star_wars.jpg');
-  background-repeat: no-repeat cover;
+  box-sizing:border-box; 
+  background-color: #090621; 
+   
+}
+
+
+@media (min-width: 1280px) {
+
+  body {        
+    background-image: url('../app/assets/star_wars.jpg');
+    background-repeat: no-repeat cover;
+  }
+  
+ 
 }
