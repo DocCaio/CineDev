@@ -7,17 +7,17 @@ interface ModalProps {
   children: React.ReactNode;
 }
 
-const Bg_Style = {
+const Bg_Style: React.CSSProperties = {
   position: 'fixed',
   top: '0',
   right: '0',
   left: '0',
   bottom: '0',
   backgroundColor: 'rgba(0,0,0,0.7)',
-  zIndex: '1000'
+  zIndex: 1000 // Use number for zIndex
 };
 
-const modal_style = {
+const modal_style: React.CSSProperties = {
   display: 'block',
   gap: '10px',
   alignItems: 'center',
@@ -31,11 +31,11 @@ const modal_style = {
   color: 'black'
 };
 
-const close_bnt = {
+const close_bnt: React.CSSProperties = {
   cursor: 'pointer',
   color: 'white',
   backgroundColor: '#1D4ED8',
-  fontWeight: '500',
+  fontWeight: 500, // Use number for fontWeight
   borderRadius: '0.5rem',
   fontSize: '1rem',
   lineHeight: '2rem',
@@ -44,7 +44,7 @@ const close_bnt = {
   marginRight: '0.5rem',
   display: 'inline-flex',
   alignItems: 'center',
-  textDecoration: 'none',
+  textDecoration: 'none', // Ensure textDecoration is 'none' instead of 'none' 
   border: 'none'
 };
 
