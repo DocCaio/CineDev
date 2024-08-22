@@ -4,6 +4,7 @@ import styles from './styles/emptyKart.module.css';
 
 export default function CarrinhoVazio() {
     return (
+        <div className={styles.container}>
         <div className={styles.card}>
             <IconShoppingCartOff size={150} stroke={0.5} />
             <div>
@@ -13,6 +14,7 @@ export default function CarrinhoVazio() {
             <Link href="/pages/shop" className={styles.link}>
                View products
             </Link>
+        </div>
         </div>
     )
 }
