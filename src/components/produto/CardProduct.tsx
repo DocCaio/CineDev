@@ -17,7 +17,7 @@ export default function CartaoProduto(props: CartaoProdutoProps) {
                 <Image src={imagem} alt={nome} fill className={styles.ticket} />
             </div>
             <div className={styles.description}>
-                <h2 className={styles.test}>{nome}</h2>
+                <h2 className={styles.text}>{nome}</h2>
                 <p className={styles.descricao}>{descricao}</p>
                 <div className={styles.container}>
                     <span className={styles.span}>R$ {preco?.toFixed(2)}</span>

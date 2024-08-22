@@ -1,5 +1,4 @@
-import Carrinho from './Carrinho'
-import './styles/page.module.css';
+import Carrinho from './Carrinho';
 import styles from './styles/page.module.css';
 
 

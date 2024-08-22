@@ -71,3 +71,19 @@
     margin-top: 1rem;
 }
     
+
+
+@media (max-width: 600px) {
+    
+    .containerCards {    
+      width: 100%;
+      
+    }
+
+      
+    .cards {
+        
+        width: 100%;
+          
+    }
+  }

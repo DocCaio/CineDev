@@ -10,8 +10,8 @@ export interface AreaItemCarrinhoProps {
 }
 
 export default function AreaItemCarrinho(props: AreaItemCarrinhoProps) {
-    return (
-        <div className={styles.container}>
+    return ( 
+        <>     
             <div className={styles.card}>
                 <Image
                     src={props.item.produto.imagem}
@@ -42,6 +42,6 @@ export default function AreaItemCarrinho(props: AreaItemCarrinhoProps) {
                     <IconPlus />
                 </button>
             </div>
-        </div>
+            </>       
     )
 }
