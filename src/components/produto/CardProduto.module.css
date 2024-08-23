@@ -73,12 +73,8 @@
     
 
 
-@media (max-width: 600px) {
-    
-    .containerCards {    
-      width: 100%;
-      
-    }
+@media (max-width: 600px) {   
+   
 
       
     .cards {
