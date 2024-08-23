@@ -44,3 +44,13 @@
   margin: 8px;
   color: #FFF;
 }
+
+@media (max-width: 600px) {
+  .app {
+    display: flex;
+    justify-content: center;
+    
+    
+  }
+
+}
