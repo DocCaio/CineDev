@@ -73,6 +73,7 @@
     }
 
     .next {
+        margin-bottom: 1rem;
         font-size: 20px; /* Reduced font size for smaller screens */
         padding: 0.5rem; /* Reduced padding for smaller screens */
     }
