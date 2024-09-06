@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className={style.body}>
         <header>          
           <nav className={style.barContent} >   
            <Navbar/>   

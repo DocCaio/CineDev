@@ -17,8 +17,9 @@ body {
 @media (min-width: 1280px) {
 
   body {        
-    background-image: url('../app/assets/star_wars.jpg');
+    background-image: url('../app/assets/starWars.png');
     background-repeat: no-repeat cover;
+    
   }
   
  
