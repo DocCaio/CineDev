@@ -28,7 +28,7 @@ Este projeto foi idealizado para consolidar conceitos avançados de renderizaç�
 - [x] **Navegação Multipáginas (Multi-pages):** Roteamento dinâmico e otimizado nativo do Next.js.
 - [x] **Vitrine de Filmes:** Listagem de produções em cartaz, lançamentos e categorias.
 - [x] **Página de Detalhes:** Informações aprofundadas sobre cada filme (sinopse, elenco, classificação indicativa).
-- [x] **Loja de Ingressos (Ticket Shop):** Interface interativa para escolha de assentos, seleção de horários e checkout fictício *(Em desenvolvimento)*.
+- [x] **Loja de Ingressos (Ticket Shop):** Interface interativa para escolha de assentos, seleção de horários e checkout fictício.
 - [x] **Responsividade Total:** Design adaptado para smartphones, tablets e desktops.
 
 ---
