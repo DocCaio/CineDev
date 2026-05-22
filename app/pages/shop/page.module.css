@@ -1,0 +1,35 @@
+.pagina {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.25rem;    
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+
+@media (max-width: 1200px) {
+    .pagina {
+        gap: 2rem; 
+    }
+}
+
+@media (max-width: 992px) {
+    .pagina {
+        gap: 1.75rem; 
+    }
+}
+
+@media (max-width: 768px) {
+    .pagina {
+        gap: 1.5rem; 
+    }
+}
+
+@media (max-width: 576px) {
+    .pagina {
+        margin-left: 2.5rem;
+        flex-direction: column; 
+        gap: 1.5rem; 
+    }
+}
